@@ -4,7 +4,7 @@
 	<version>1.0</version>
 	<link>http://isenselabs.com</link>
 	<author>iSenseLabs</author>
-	<file path="catalog/view/theme/*/template/common/footer.tpl">
+	<file path="catalog/view/theme/*/template/common/footer.twig">
 		<operation error="skip">
 			<search><![CDATA[</body>]]></search>
 			<add position="before"><![CDATA[
@@ -75,9 +75,9 @@
 						var show_notification = true;
 
 						var html = '<div id="cookie_consent_notification">';
-								html += 'This website uses cookies to improve your user experience.';
+								html += 'Ми використовуємо файли cookie, щоб підтримувати ваш досвід на нашому сайті. Продовжуючи користуватися нашим сайтом, ви погоджуєтеся використовувати наші cookies.';
 								html += '<a href="javascript:void(0);" class="disable_cookie_consent_notification">';
-								html += 'Continue';
+								html += 'Добре';
 							html += '</a></div>';
 
 						if (typeof Cookies == "undefined" || typeof Cookies != "function") {
